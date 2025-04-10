@@ -25,7 +25,7 @@ const reviewsSwiper = () => {
       },
       1440: {
         slidesPerView: 2,
-      }
+      },
     },
   });
 };
