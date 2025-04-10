@@ -19,7 +19,7 @@
   color: #000;
   font-weight: 400;
   background: #fff;
-  
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,9 +35,12 @@
 .title-h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
   color: #000;
+  @media screen and (min-width: 1440px) {
+    font-size: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
