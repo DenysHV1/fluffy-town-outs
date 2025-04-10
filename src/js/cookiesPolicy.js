@@ -3,18 +3,18 @@ export const cookiePolicy = () => {
   const btnEl2 = document.querySelector('.cookies-decline-js');
   const modalEl = document.querySelector('.cookies-section');
 
-  if (JSON.parse(localStorage.getItem('status'))) {
+  if (JSON.parse(localStorage.getItem('fluffy-town-status'))) {
     modalEl.style.display = 'none';
     return;
   }
 
   btnEl1.addEventListener('click', () => {
     modalEl.style.display = 'none';
-    localStorage.setItem('status', JSON.stringify(true));
+    localStorage.setItem('fluffy-town-status', JSON.stringify(true));
   });
 
   btnEl2.addEventListener('click', () => {
     modalEl.style.display = 'none';
-    localStorage.setItem('status', JSON.stringify(false));
+    localStorage.setItem('fluffy-town-status', JSON.stringify(false));
   });
 };
