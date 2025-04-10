@@ -1,6 +1,6 @@
 .features {
   margin-bottom: 80px;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 110px;
   @media (min-width: 1440px) {
     margin-bottom: 140px;
   }
