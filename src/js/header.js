@@ -5,13 +5,18 @@ const mobileMenu = () => {
     '.header-nav-mobile-button-close'
   );
   const mobileMenuItems = document.querySelectorAll('.header-nav-mobile-item');
-  const header = document.querySelector('.header');
+const logo = document.querySelector('.header-logo')
+
   mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.add('is-open');
+    mobileMenuButton.style.display = "none"
+    logo.style.display = "none"
   });
 
   mobileMenuButtonClose.addEventListener('click', () => {
     mobileMenu.classList.remove('is-open');
+    mobileMenuButton.style.display = "flex"
+    logo.style.display = "flex"
   });
 
   mobileMenuItems.forEach(item => {
@@ -20,9 +25,6 @@ const mobileMenu = () => {
     });
   });
 
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scroll', window.scrollY > 0);
-  });
 };
 
 export default mobileMenu;
