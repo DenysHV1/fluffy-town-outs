@@ -52,6 +52,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 0;
 }
 
 .faq_question {
@@ -85,7 +86,6 @@
   max-height: 0;
   overflow: hidden;
   transition: none;
-  margin-left: 5px;
 }
 
 .faq-answer.open {
@@ -96,7 +96,6 @@
   font-weight: 400;
   font-size: 16px;
   color: #000;
-  margin-left: 5px;
   @media (min-width: 1440px) {
     font-size: 24px;
   }
