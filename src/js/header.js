@@ -26,6 +26,14 @@ const mobileMenu = () => {
       logo.style.display = 'flex';
     });
   });
+
+  mobileMenu.addEventListener('click', e => {
+    if (e.target.className === 'header-nav-mobile is-open') {
+      mobileMenu.classList.remove('is-open');
+      mobileMenuButton.style.display = 'flex';
+      logo.style.display = 'flex';
+    }
+  });
 };
 
 export default mobileMenu;
